@@ -1,0 +1,101 @@
+@import "variable";
+
+/*Services
+----------------------------------------------------------------------------------------------------------------------*/
+#services{
+  background: $primary-color;
+  @media only screen and (max-width: 991px) {
+   padding-bottom: 70px; /*as section has bottom padding 110px by default; (110px - service-item margin-bottom*/
+  }
+  .service-item{
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+    &:hover{
+      .icon{
+        background: $accent-color;
+        border: 1px solid $accent-color;
+        i{
+          color: $color-light;
+        }
+      }
+      h4{
+        color: $accent-color;
+      }
+    }
+    .icon{
+      width: 100px;
+      height: 100px;
+      border: 1px solid $font-color-primary;
+      border-radius: 50%;
+      background: none;
+
+      i{
+        font-size: 50px;
+        line-height: 100px;
+        color: $font-color-primary;
+      }
+    }
+
+    h4{
+      margin: 20px 0 15px 0;
+    }
+  }
+}
+
+
+/*Functionality
+----------------------------------------------------------------------------------------------------------------------*/
+.ease-animation{
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+#functionality{
+background: $primary-color-dark;
+  .functions{
+    margin-top: 25px;
+    @extend .ease-animation;
+    .number{
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border: 1px solid $font-color-primary;
+      border-radius: 50%;
+      left: 100%;
+      margin-left: -50px;
+      margin-bottom: 15px;
+
+      h4{
+        line-height: 50px;
+        text-align: center;
+      }
+    }
+
+    h5{
+      font-weight: 600;
+    }
+
+    p{
+      margin-top: 10px;
+    }
+
+    &:hover{
+      .number{
+        background: $accent-color;
+        border-color: $accent-color;
+      }
+      h4{
+        color: $color-light;
+      }
+      h5{
+        color: $accent-color;
+      }
+    }
+  }
+
+  img{
+    margin-top: 70px;
+  }
+}

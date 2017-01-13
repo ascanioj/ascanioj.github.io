@@ -1,0 +1,283 @@
+@import "variable";
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0 0 0 0;
+  padding: 0;
+  outline: none;
+  display: block;
+  font-family: $font-stack;
+  font-size: 15px;
+  background: transparent;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-stroke: 1px transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+
+}
+
+/*Typography
+----------------------------------------------------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, a, p, ul, li, blockquote, address, input{
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  border: none;
+}
+h1, h2, h3, h4, h5, h6{
+  color: $font-color-primary;
+  word-spacing: 1px;
+}
+
+h1{ font-size: 3em;}
+h2{ font-size: 2.2em;}
+h3{ font-size: 1.8em;}
+h4{ font-size: 1.5em;}
+h5{ font-size: 1.2em;}
+h6{ font-size: 1em;}
+
+a, p, li, blockquote, address, input{
+  color: $font-color-secondary;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1em;
+  word-spacing: .5px;
+}
+
+a{
+  color: $font-color-primary;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  &:hover, &:focus{
+    text-decoration: none;
+    color: $accent-color;
+  }
+}
+
+ul, li{
+  list-style: none;
+}
+
+i{
+  margin: 0;
+  padding: 0;
+  color: $font-color-primary;
+}
+
+/*Common Elements
+----------------------------------------------------------------------------------------------------------------------*/
+.visible{
+  visibility: visible;
+}
+.invisible{
+  visibility: hidden;
+}
+
+section{
+  position: relative;
+  padding: 110px 0;
+  background-color: $section-background;
+
+  .section-title{
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: 300;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100px;
+      margin-left: -50px;
+      left: 50%;
+      bottom: -20px;
+      height: 1px;
+      border-bottom: 1px solid $accent-color;
+    }
+
+    span{
+      font-weight: bold;
+    }
+  }
+
+  .section-title-on-overlay{
+    color: $color-light;
+  }
+
+  .section-subtitle{
+    text-align: left;
+    margin-bottom: 50px;
+    font-weight: 300;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100px;
+      left: 0;
+      bottom: -20px;
+      height: 1px;
+      border-bottom: 1px solid $accent-color;
+    }
+
+    span{
+      font-weight: bold;
+    }
+  }
+
+
+  .section-intro{
+    padding: 0 10%;
+    margin-bottom: 60px;
+    font-size: 1.1em;
+    word-spacing: .5px;
+  }
+  .section-intro-on-overlay{
+    color: $color-light;
+  }
+}
+
+.subordinate-section{
+  padding-top: 100px;
+}
+
+
+
+/*Swiper
+----------------------------------------------------------------------------------------------------------------------*/
+.swiper-container {
+  width: 100%;
+  height: auto;
+  .swiper-slide{
+    padding-bottom: 50px;
+  }
+  .swiper-pagination{
+    bottom: 0;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    bottom: 0;
+    display: inline-block;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    margin-top: 20px;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: $accent-color;
+  }
+}
+
+
+.one-to-another{
+  margin-top: 30px;
+  a{
+    color: $accent-color;
+    i{
+      color: $accent-color;
+      margin-right: 20px;
+      font-size: 20px;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.ease-in-animation{
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+
+.next{
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  bottom: -25px;
+  border: 1px solid $accent-color;
+  border-radius: 50%;
+  background: $primary-color-dark;
+  @extend .ease-in-animation;
+
+  i{
+    font-size: 24px;
+    line-height: 50px;
+    color: $accent-color;
+  }
+
+  &:hover{
+    background: $accent-color;
+    i{
+      color: $color-light;
+    }
+  }
+}
+
+#back-to-top{
+  visibility: hidden;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid $accent-color;
+  background: none;
+  animation-duration: 1s;
+  z-index: 9;
+  @extend .ease-in-animation;
+
+  i{
+    color: $accent-color;
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  &:hover{
+    background: $accent-color;
+
+    i{
+      color: $color-light;
+    }
+  }
+
+  &.is-visible{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+
+
+.multiple-image{
+  width: 100%;
+  height: auto;
+  position: relative;
+  img{
+    position: relative;
+    top: 0;
+  }
+  .absolute-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

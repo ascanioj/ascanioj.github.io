@@ -1,0 +1,102 @@
+@import "variable";
+
+/*Color Switcher
+----------------------------------------------------------------------------------------------------------------------*/
+.switcher{
+  position: fixed;
+  top: 100px;
+  right: -180px;
+  z-index: 9;
+
+  .switch-options{
+    width: 180px;
+    height: 100%;
+    padding: 15px 15px;
+    background: $primary-color;
+    box-shadow: $box-shadow;
+    border-top: 1px solid $accent-color;
+
+    h6{
+      margin: 10px 0;
+    }
+
+    ul{
+      margin: 10px 0;
+      padding: 0;
+      li{
+        margin: 2px 2.5px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+
+    hr{
+      height: 1px;
+      background-color: $divider-color;
+    }
+
+    .theme-mode{
+      li{
+        width: 68px;
+        line-height: 1.8;
+        text-align: center;
+        background-color: $primary-color-dark;
+        border: 1px solid $divider-color;
+        cursor: pointer;
+        &:hover{
+          color: $accent-color;
+        }
+      }
+    }
+    .header-background{
+      padding: 0 1px;
+      li{
+        margin: 8px 0;
+        width: 148px;
+        line-height: 1.8;
+        text-align: center;
+        background-color: $primary-color-dark;
+        border: 1px solid $divider-color;
+        cursor: pointer;
+        &:hover{
+          color: $accent-color;
+        }
+      }
+    }
+
+  }
+  .switch-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    margin-left: -40px;
+    top: 0;
+    background-color: $primary-color;
+    border: 1px solid $accent-color;
+    border-right: none;
+    cursor: pointer;
+
+    i{
+      font-size: 24px;
+      line-height: 1.6;
+    }
+    &:hover{
+      i{
+        color: $accent-color;
+      }
+    }
+  }
+
+  #c-red{ background-color: #ef5350; }
+  #c-pink{ background-color: #ec407a; }
+  #c-indigo{ background-color: #5c6bc0; }
+  #c-blue{ background-color: #42a5f5; }
+  #c-cyan{ background-color: #26c6da; }
+  #c-green{ background-color: #9ccc65; }
+  #c-amber{ background-color: #ffca28; }
+  #c-orange{ background-color: #ffa726; }
+
+
+}

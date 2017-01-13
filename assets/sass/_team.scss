@@ -1,0 +1,53 @@
+@import "variable";
+/*Team Members
+----------------------------------------------------------------------------------------------------------------------*/
+#team{
+  background: $primary-color-dark;
+  padding-bottom: 60px; /*As single-team-member has 50pz bottom margin*/
+
+  .single-team-member{
+    margin-bottom: 50px;
+
+    img{
+      width: 150px;
+    }
+
+    h5{
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    h6{
+      margin-top: 10px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    ul{
+      margin-top: 10px;
+      li{
+        margin: 0 5px;
+        a{
+          i{
+            font-size: 20px;
+            color: $font-color-secondary;
+          }
+
+          &:hover{
+            i{
+              color: $accent-color;
+            }
+          }
+        }
+      }
+    }
+
+    &:hover{
+      h5{
+        color: $accent-color;
+      }
+    }
+
+  }
+}

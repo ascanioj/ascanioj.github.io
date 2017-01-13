@@ -1,0 +1,296 @@
+@import "variable";
+
+.button{
+  min-width: 120px;
+  line-height: 26px;
+  padding: 6px 20px;
+  font-size: 1.2em;
+  border-radius: 0;
+  outline: none;
+}
+
+/*Contact
+----------------------------------------------------------------------------------------------------------------------*/
+#contact{
+
+}
+
+.contact-form{
+  form{
+    input, textarea{
+      width: 100%;
+      padding: 6px 10px;
+      background: none;
+      border: 1px solid $font-color-secondary;
+      margin-bottom: 20px;
+      color: $font-color-primary;
+
+      &:focus{
+        outline: none;
+        border: 1px solid $accent-color;
+      }
+    }
+    button{
+      @extend .button;
+      background: $font-color-secondary;
+      color: $color-dark;
+
+      &:hover{
+        background: $accent-color;
+        color: $color-light;
+      }
+    }
+  }
+}
+
+
+/* Snackbar
+----------------------------------------------------------------------------------------------------------------------*/
+#snackbar, #fail-snackbar {
+  visibility: hidden;
+  min-width: 300px;
+  margin-left: -150px;
+  font-weight: 300;
+  background-color: $accent-color;
+  color: $color-light;
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.show {
+  visibility: visible !important;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+
+.contact-info{
+  ul{
+    @media only screen and (max-width: 991px) {
+      margin-top: 35px;
+    }
+    li{
+      margin-top: 15px;
+      span{
+        font-size: 1em;
+        margin-right: 10px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+      i{
+        font-size: 20px;
+        color: $accent-color;
+      }
+      p{
+        font-size: 1.1em;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+
+
+/*Map
+----------------------------------------------------------------------------------------------------------------------*/
+#map{
+  padding: 0;
+
+  #map-toggle{
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    top: -25px;
+    border: 1px solid $accent-color;
+    border-radius: 50%;
+    background: $primary-color-dark;
+    cursor: pointer;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    transition: .3s ease-in;
+
+    i{
+      font-size: 24px;
+      line-height: 50px;
+      color: $accent-color;
+    }
+
+    &:hover{
+      background: $accent-color;
+      i{
+        color: $color-light;
+      }
+    }
+  }
+
+  #google-map {
+    width: 100%;
+    height: 350px;
+
+    #map-container {
+      position: relative;
+      width: inherit;
+      height: inherit;
+    }
+  }
+}
+#cd-zoom-in, #cd-zoom-out {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin-left: 50px;
+  background-color: $accent-color;
+  background-size: 32px 64px;
+  i{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 32px;
+  }
+}
+.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+  background-color: $accent-color;
+}
+#cd-zoom-in {
+  background-position: 50% 0;
+  margin-top: 50px;
+  margin-bottom: 1px;
+}
+#cd-zoom-out {
+  background-position: 50% -32px;
+}
+
+
+
+
+/*Newsletter
+----------------------------------------------------------------------------------------------------------------------*/
+#get-in-touch{
+  width: 100%;
+  height: auto;
+  background: url("../images/newsletter-background.jpg") no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 0;
+
+  .overlay{
+    padding: 110px 0;
+    width: 100%;
+    background: $newsletter-overlay;
+  }
+
+  .newsletter{
+    width: 50%;
+    @media only screen and (max-width: 991px) {
+      width: 60%;
+    }
+    @media only screen and (max-width: 767px) {
+      width: 90%;
+    }
+
+    input{
+      width: 100%;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      background: none;
+      border: 1px solid $font-color-secondary;
+      text-align: center;
+
+      &:focus{
+        outline: none;
+        border: 1px solid $accent-color;
+      }
+    }
+
+    button{
+      @extend .button;
+      border: 1px solid $color-light;
+      background: $color-light;
+      color: $accent-color;
+      border-radius: 25px;
+      &:hover{
+        background: $accent-color;
+        color: $color-light;
+        border: 1px solid $accent-color;
+      }
+    }
+
+
+    .subscription-success, .subscription-error{
+      text-align: center;
+      font-size: 1.1em;
+      color: #ffffff;
+      padding: 30px 0 0 0;
+      display: none;
+      &.visible{
+        display: block;
+      }
+      .mailchimp-response-icon{
+        color: #ffffff;
+        font-size: 30px;
+      }
+    }
+
+  }
+
+}
+
+
+
+/*Social Icons
+----------------------------------------------------------------------------------------------------------------------*/
+
+.social-icons{
+  padding-top: 50px;
+  li{
+    margin-top: 20px;
+    a{
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: 1px solid $accent-color;
+      border-radius: 50%;
+      i{
+        font-size: 20px;
+        color: $accent-color;
+      }
+
+      &:hover{
+        background: $accent-color;
+
+        i{
+          color: $color-light;
+        }
+      }
+    }
+  }
+}

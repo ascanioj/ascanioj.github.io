@@ -1,0 +1,10 @@
+@import "variable";
+
+footer{
+  background: $primary-color;
+  padding: 15px 0;
+  p{
+    letter-spacing: .3px;
+  }
+}
+

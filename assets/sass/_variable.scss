@@ -1,0 +1,51 @@
+//*Colors
+//----------------------------------------------------------------------------------------------------------------------*/
+$color-1: #404040;
+$color-2: #f6f6f6;
+$color-3: #ffa726; /*Change This Color Only*/
+
+$color-light: #f7f7f7;
+$color-dark: #242424;
+
+$primary-color: $color-1;
+$primary-color-light: lighten($primary-color, 5%);
+$primary-color-dark: darken($primary-color, 3.5%);
+$secondary-color: $color-2;
+$secondary-color-light: lighten($secondary-color, 5%);
+$secondary-color-dark: darken($secondary-color, 5%);
+$accent-color: $color-3;
+$accent-color-light: lighten($accent-color, 5%);
+$accent-color-dark: darken($accent-color, 5%);
+
+$body-color: $primary-color;
+$divider-color: darken($primary-color, 15%);
+
+$navbar-background: $primary-color;
+$side-nav-background: $primary-color;
+$section-background: $primary-color;
+
+//*Overlay
+//----------------------------------------------------------------------------------------------------------------------*/
+$overlay-normal: rgba(0, 0, 0, 0.5);
+$overlay-light: rgba(0, 0, 0, 0.3);
+
+$header-overlay: rgba($primary-color, .75);
+$header-overlay-solid: rgba($color-dark, .8);
+$header-overlay-video: rgba($color-dark, .6);
+$video-overlay: rgba(0, 0, 0, .6);
+$testimonial-overlay: rgba(0, 0, 0, .8);
+$download-overlay: rgba(0, 0, 0, .6);
+$newsletter-overlay: rgba(0, 0, 0, .8);
+
+//*Fonts
+//----------------------------------------------------------------------------------------------------------------------*/
+$font-stack: 'Assistant', sans-serif;
+$font-size-normal: 1.1em;
+$font-color-primary: $secondary-color;
+$font-color-secondary:  darken($font-color-primary, 10%);
+
+//*Shadow
+//----------------------------------------------------------------------------------------------------------------------*/
+$navigation-box-shadow: 0px 0px 5px 0px $overlay-light;
+$text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+$box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
