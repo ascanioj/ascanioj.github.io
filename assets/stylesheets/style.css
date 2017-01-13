@@ -1289,7 +1289,7 @@ header {
 #get-in-touch {
   width: 100%;
   height: auto;
-  background: url("../images/newsletter-background.jpg") no-repeat center top fixed;
+  background: url("../images/newsletter-background.png") no-repeat center top fixed;
   -webkit-background-size: cover;
   background-size: cover;
   padding: 0; }
