@@ -867,7 +867,7 @@ header {
 #video-section {
   width: 100%;
   height: auto;
-  background: url("../images/video-background.jpg") no-repeat center top fixed;
+  background: url("../images/video-background.png") no-repeat center top fixed;
   -webkit-background-size: cover;
   background-size: cover;
   padding: 0; }
