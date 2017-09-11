@@ -1,643 +1,480 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="author" content="Mohammad Asif">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
-    <!-- Page Title -->
-    <title>Sorin</title>
-
-    <!-- Fav Icon -->
-    <link rel="icon" href="assets/favicon.ico">
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
-
-    <!-- Ion icon Font -->
-    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="vendor/animate/animate.min.css">
-
-    <!-- AOS -->
-    <link rel="stylesheet" href="vendor/aos/aos.css">
-
-    <!-- swiper -->
-    <link rel="stylesheet" href="vendor/swiper/swiper.css">
-
-    <!-- Magnific-popup -->
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
-
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="assets/stylesheets/style-red.css">
-    <link rel="stylesheet" href="assets/stylesheets/style-pink.css">
-    <link rel="stylesheet" href="assets/stylesheets/style-indigo.css">
-    <link rel="stylesheet" href="assets/stylesheets/style-blue.css">
-    <link rel="stylesheet" href="assets/stylesheets/style-cyan.css">
-    <link rel="stylesheet" href="assets/stylesheets/style-green.css">
-    <link rel="stylesheet" href="assets/stylesheets/style-amber.css">
-    <link rel="stylesheet" href="assets/stylesheets/style-orange.css">
-
-    <!-- Default Custom Stylesheet -->
-    <link id="color-switcher" rel="stylesheet" href="assets/stylesheets/style.css">
-
-
-
-    <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-83584273-2', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rawr for a reason</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="Rawr for a reason">
+    <meta name="author" content="Bota iusti">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Poppins:300,400,500,600" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendor/reset.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/ion-icons/ionicons.min.css">
+    <link rel="stylesheet" href="vendor/owl-slider/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/slideshow/slideshow.css">
+    <link rel="stylesheet" href="vendor/lightbox/lity.min.css">
+    <link rel="stylesheet" href="vendor/ion-icons/ionicons.css">
+    <!-- Theme CSS -->
+    <link id="theme" rel="stylesheet" href="css/theme.css">
+    <script src="/vendor/modernizr.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".scrolling-nav">
+<body>
 
-    <!-- Page Pre-Loader
-    ------------------------------------------------------------------------------------------------------------------->
-    <div id="page-loader">
-        <div class="animated bounceInDown">
-
-            <!-- 1st Loader -->
-
-            <div class="loader-1">
-                <div class="spinner">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-
-            <!-- ./1st Loader -->
-
-
-
-            <!-- 2nd Loader -->
-
-            <!--<div class="loader-2">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>-->
-
-            <!-- ./2nd Loader -->
-
-
-
-            <!-- 3rd Loader -->
-
-            <!--<div class="loader-3">
-                <div class="spinner"></div>
-            </div>-->
-
-            <!-- .3rd Loader -->
-
-
-
-            <!-- 4th Loader -->
-
-            <!--<div class="loader-4">
-                <div class="spinner">
-                    <div class="rect1"></div>
-                    <div class="rect2"></div>
-                    <div class="rect3"></div>
-                    <div class="rect4"></div>
-                    <div class="rect5"></div>
-                </div>
-            </div>-->
-
-            <!-- ./4th Loader -->
-
-
-
-            <!-- 5th Loader -->
-
-            <!--<div class="loader-5">
-                <div class="folding-cube">
-                    <div class="cube1 cube"></div>
-                    <div class="cube2 cube"></div>
-                    <div class="cube4 cube"></div>
-                    <div class="cube3 cube"></div>
-                </div>
-            </div>-->
-
-            <!-- ./5th Loader -->
-
-
-        </div>
+    <!-- Scroll up -->
+    <div class="scrollup">
+        <i class="ion-ios-arrow-up"></i>
     </div>
 
+    <!-- Main Container -->
+    <div class="web-in">
 
-    <!-- Home [Header + About]
-    ------------------------------------------------------------------------------------------------------------------->
-    <!-- Header -->
-    <header id="home" data-stellar-background-ratio="0.5">
-        <!-- Overlay -->
-        <div class="overlay">
+        <!-- Search Modal -->
+        <div id="search-modal">
+            <img src="img/exit.svg" class="exit" alt="">
+            <form class="search-form" action="post">
+                <label>What are you looking for?</label>
+                <input type="text" placeholder="Your search term here...">
+                <span>Press <b class="primary">enter</b> to confirm search term</span>
+            </form>
+        </div>
 
-            <!-- Navigation -->
-            <nav class="navbar-default navbar-fixed-top scrolling-nav">
-                <div class="container">
-                    <div class="navbar-header">
-                        <!-- Menu Button -->
-                        <i id="nav-btn" class="ion-navicon"></i>
-                        <!-- Brand Logo -->
-                        <div class="navbar-brand">
-                            <img id="logo" class="text-center center-block" src="assets/images/logo.png"
-                                 data-rjs="assets/images/logo@2x.png" alt="BRAND LOGO">
+        <!-- Start Project Modal -->
+        <div id="modal-bg">
+            <img src="img/exit.svg" class="exit" alt="">
+            <div class="holder">
+                <div class="placer">
+                    <div id="modal" class="center">
+                        <div class="title">
+                            <h5>Contact</h5>
+                            <span class="promo-heading">Let's discuss your next project.</span>
+                            <hr>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-6 w-section mh"><i class="ion-ios-star-outline"></i>
+                                <h3>Our Service</h3>
+                                <p>Lorem ipsum dolor amet consectetuer adipis.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 w-section mh"><i class="ion-ios-glasses-outline"></i>
+                                <h3>Our Promise</h3>
+                                <p>Lorem ipsum dolor amet consectetuer adipis.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 w-section mh"><i class="ion-ios-filing-outline"></i>
+                                <h3>Your Project</h3>
+                                <p>Lorem ipsum dolor amet consectetuer adipis.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 w-section mh"><i class="ion-ios-person-outline"></i>
+                                <h3>Focus on You</h3>
+                                <p>Lorem ipsum dolor amet consectetuer adipis.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="btn"><span>Give us a call</span></a>
+                        <a href="#" class="btn"><span>Contact Page</span></a>
                     </div>
-                    <!-- Navigation Link -->
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a class="active page-scroll" href="#home">Home</a></li>
-                            <li><a class="page-scroll" href="#services">About</a></li>
-                            <li><a class="page-scroll" href="#features">Scam Detector</a></li>
-                            <li><a class="page-scroll" href="#pricing">Travel By Dart</a></li>
-							<li><a class="page-scroll" href="#pricing">Purposs</a></li>
-                            <li><a class="page-scroll" href="#why">On Air</a></li>
-                            <li><a class="page-scroll" href="#download">Radio Show</a></li>
-                            <li><a class="page-scroll" href="#team">Blog</a></li>
-                            <li><a class="page-scroll" href="#contact">Contact</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container -->
-            </nav><!-- /.navbar-default -->
-
-            <!-- Side Nav -->
-            <div id="side-nav">
-                <!-- Side Nav Brand Logo -->
-                <img class="center-block" src="assets/images/logo.png" data-rjs="assets/images/logo@2x.png" alt="">
-                <!-- App Name -->
-                <h5>SORIN</h5>
-                <ul>
-                    <li><a class="active side-nav-link" href="#home">Home</a></li>
-                    <li><a class="side-nav-link" href="#services">About</a></li>
-                    <li><a class="side-nav-link" href="#features">Scam Detector</a></li>
-                    <li><a class="side-nav-link" href="#pricing">Travel By Dart</a></li>
-                    <li><a class="side-nav-link" href="#why">Purposs</a></li>
-                    <li><a class="side-nav-link" href="#download">On Air</a></li>
-                    <li><a class="side-nav-link" href="#team">Radio Show</a></li>
-                    <li><a class="side-nav-link" href="#contact">Blog</a></li>
-					<li><a class="side-nav-link" href="#contact">Contact</a></li>
-
-                </ul>
+                </div>
             </div>
-            <!-- ./Side Nav -->
-            <!-- Side Nav Mask -->
-            <div id="side-nav-mask"></div>
-            <!-- ./Navigation -->
+        </div>
 
-
-            <!-- Header Content -->
+        <!-- Navigation -->
+        <nav id="light" class="transparent start-light border regular">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <!-- Intro -->
-                        <div class="intro">
-                            <h1>Sorin</h1>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipisc ingelit. In euismod iaculis
-                                lobortisv estibulum molestie sollicitudin.</h5>
-
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <a class="btn ease-in-animation" href="#about">View more</a>
-                                </div>
+                    <div class="col-md-12">
+                        <div class="nav-ui n_">
+                            <div>
+                                <a href="#" class="btn hidden-xs start-project"><span>Contact</span></a>
+                                <a href="#" class="search">
+                                    <img class="white-icon" src="img/search.svg" alt="">
+                                    <img class="dark-icon" src="img/search-dark.svg" alt="">
+                                </a>
+                                <div id="menu-icon"><span></span></div>
                             </div>
-
                         </div>
-                        <!-- ./Intro -->
-                    </div>
-                </div>
-            </div>
-            <!-- ./Header Content -->
-
-        </div>
-        <!-- Overlay -->
-
-    </header>
-    <!-- ./Header -->
-
-    <!-- About -->
-	<section data-brackets-id="21166" id="video-section">
-        <div data-brackets-id="21167" class="overlay">
-        	<div class="container">
-            <!-- Title -->
-            <h2 class="section-title"><span>About</span></h2>
-            	<div class="row">
-                	<div class="col-md-6 col-sm-12 col-xs-12">
-                    <!-- Image -->
-                    <img class="img-responsive center-block" src="">
-                </div>
-                	<div class="col-md-6 col-sm-12 col-xs-12">
-                    <!-- About your app -->
-						<p class="text-left">
-                        Lorem ipsum dolor sit amet, consectetur is adipiscing. Morbi venenatis et tortor ac tincidunt.
-                        In euismod iaculis lobortis. Vestibulum posuere molestieding sollicitudin. Vestibulum venenatis
-                        pharetra, mut vestibulum elit ultricies. Vestibulum at mollis expot, consectetur massa. Donec
-                        nunc, laoreet nibh, semper nunc. Donece posuereding tellus. Pellentesque tempus suscipit velit
-                        sit amet bibendum. Lorem ipsum dolor sit amet, consectetur is adipiscing bibendum. Lorem ipsum
-                        dolor sit amet, consectetur is adipiscing. Morbi venenatis et tortor ac tincidunt.
-                    </p>
-
-						<div class="one-to-another">
-                        <a href="#video-section" class="text-capitalize"><i class="ion-ios-play"></i>Watch feature video</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    
-    <!-- ./About -->
-
-
-
-    <!-- Services [Services + Function]
-    ------------------------------------------------------------------------------------------------------------------->
-    <!-- Services -->
-    
-    <!-- ./Services -->
-
-    <!-- Functionality -->
-    <section id="functionality" class="subordinate-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <!-- Title -->
-                    <h3 class="section-subtitle">Scam Detector
-						<br><span>“The world's #1 fraud prevention app”</span></br></h3>
-                    <p class="text-left">In 2011 Sorin founded Scam Detector. What he didn't know was how popular this app would become.</p>
-
-                   <!-- How it works -->
-                    <div class="row">
-
-                        <!-- 1st Function -->
-                        <div class="col-md-12 functions">
-                            
-                            
-                            <p class="text-left">Scam detector app is a free mobile and web-based application that exposes in detail over 700 of the world's most notorious scams, in all industries. The app educates consumers around the globe how these scams work and teaches them how to prevent financial fraud. Scam detector has been accessed to date in 127 countries and won the 2011 Consumer Champion Awards, hosted annually by the Government of Alberta, Canada.</p>
+                        <div class="logo-holder n_">
+                            <div>
+                                <a href="index.html">
+                                    <img class="logo" src="/img/logo.png" alt="">
+                                    <img class="logo alt" src="/img/logo.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <!-- ./1st Function -->
-
-                        <!-- 2nd Function -->
-                        <div class="col-md-12 functions">
-                            
-                            
-                            <p class="text-left">Every Scam exposed in the app can be instantly shared on Facebook, Twitter, or by e-mail, while users can submit their own scams.  
-Download it now for FREE.</p>
+                        <div class="nav-content n_">
+                            <ul>
+                                <li><a href="#">Games</a>
+                                    
+                                </li>
+                                <li><a href="#">Our Story</a>
+                                   
+                                </li>
+                                <li><a href="#">Our Financials</a>
+                                   
+                                </li>
+                                <li><a href="#">Causes we support</a>
+                                   
+                                </li>
+                                <li><a href="#">Team</a>
+                                    
+                                </li>
+                                <li><a href="#">Blog</a>
+                                 
+                                </li>
+                            </ul>
                         </div>
-                        <!-- ./2nd Function -->
-
+                        <div class="clearfix"></div>
                     </div>
                 </div>
-                <!-- Image -->
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="assets/images/function-screen.png"
-                         data-rjs="assets/images/function-screen@2x.png" alt="">
-                </div>
             </div>
-        </div>
-    </section>
-    <!-- ./Functionality -->
+        </nav>
 
-
-
-    <!-- Features [Features + Benefits + Video]
-    ------------------------------------------------------------------------------------------------------------------->
-    <!-- Features -->
-    
-    <!-- ./Features -->
-
-    <!-- Benefits -->
-    <section id="benefits" class="subordinate-section">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <!-- Image -->
-                    <img class="img-responsive" src="assets/images/benefit-screen.png" data-rjs="assets/images/benefit-screen@2x.png">
-                </div>
-
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <!-- Title -->
-                    <h3 class="section-subtitle">Travel By Dart <br><span>Adventure travel meets tv &amp; philantrhopy
-  <br></span></h3>
-                    <p class="text-left">Travel by Dart is a new television series that combines adventure travel, reality tv and philanthropy. Each episode two friends throw a dart a the worlds map and travel wherever it lands, with the purpose of heping the people or the land.</p>
-
-
-<p><br>The show delivers an inspirin tale of two young men and how they overcome the callenges that face the along the way to complete each mission.
-Travel to the ends of the earth helping the people and the land, from arctic islands of Svalbard, 300 miles from the north pole addressing the polar bear cause, to a cross-country tour of Russia where they combat youth homelessness and expose mafia violence.<br></p>
-
-
-<p><br>This show is for all ages. Stay tuned at Travelbydart.com as Sorin and Matt continue to film their ongoing journey. They are giving away tons of contest prizes including free trips around the world. Full season is expected to release in summer 2014<br></p>
-
-                    <!-- Benefits Panel Group -->
-                    
-                    <!-- ./Benefits Panel Group -->
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ./Benefits -->
-
-    <!-- Video -->
-    
-    <!-- ./Video -->
-
-
-
-    <!-- Pricing
-   ------------------------------------------------------------------------------------------------------------------->
-    
-
-
-
-    <!-- Why AMPLE [Why Ample + Testimonial + Interesting Facts + Screen Shots]
-    ------------------------------------------------------------------------------------------------------------------->
-    <!-- Why Ample -->
-    <section id="why">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <!-- Title -->
-                    <h3 class="section-subtitle">Purposs<br><span>WORLD'S BIGGEST PAY-IT-FORWARD PLATFORM<br></span></h3>
-                    <p class="text-left">Sorin partnered with Sean Cooper, launching Purposs Technologies Inc, a full service advertising agency based in Alberta, Canada that focuses on three elements that every business needs, great design, strategy and development.</p>
-<p><br>The two have taken on somer major clients in industries such as tourism and hospitality, large-scale construction, products and manufacturing, beauty, retail, sporting, travel and more.<br></p>
-
-
-<p><br>With 46 contracted staffand a business model that keeps them free to travel the world while helping others(literally - just ask them), this business is as sure-fire as any. Whether it's building a website, doing a brand overhaul, handling your print markenting or expanding your vision, they can help.<br></p>
-
-<p><br>Visit purposs.net for all your business needs.<br></p>
-
-                   <!-- How it works -->
-                    
-                </div>
-                <!-- Image -->
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="assets/images/why-screen-2.png" data-rjs="assets/images/function-screen@2x.png" alt="" style="
-    padding-left: 20%;
-">
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- Why Ample -->
-
-
-    <!-- Testimonial -->
-    <section data-brackets-id="13833" id="testimonial">
-        <div data-brackets-id="13834" class="overlay">
-            <div data-brackets-id="13835" class="container">
-                <!-- Section Title -->
-				<h2 data-brackets-id="13836" class="section-title section-title-on-overlay">on air <br data-brackets-id="13837"><span data-brackets-id="13838">Catching a glimpse of sorin on camera
-</span><br></h2>
-				<p data-brackets-id="13839" class="text-center">Besides creating his own television show, Sorin is also acting in movies and is scouted for varios tv commercials.</p> <br data-brackets-id="13840"><p data-brackets-id="13841" class="text-center">Here are a few examples:</p><br data-brackets-id="13842">
-
-                <div data-brackets-id="13843" class="row">
-                    <div data-brackets-id="13844" id="testimonial-slider" class="swiper-container swiper-container-horizontal">
-                        <div data-brackets-id="13845" class="swiper-wrapper" style="transform: translate3d(-2910px, 0px, 0px); transition-duration: 0ms;"><div data-brackets-id="13858" class="col col-md-12 col-sm-12 col-xs-12 swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 970px;">
-                                <!-- Client Photo -->
-                                <div data-brackets-id="13859" class="client-photo center-block">
-                                    <img data-brackets-id="13860" class="center-block img-responsive" src="assets/images/clients/face-3.png" data-rjs="assets/images/clients/face-3@2x.png" alt="">
-                                </div>
-                                <!-- Client Testimonial -->
-                                <blockquote data-brackets-id="13861" class="text-center">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                                    In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum
-                                    venenatis pharetra mi, ut vestibulum elit ultricies a. Vestibulum at mollis ex, ac consectetur
-                                    massa. Donec nunc, laoreet a nibh et, semper tincidunt nunc. Donec ac posuere tellus."
-                                    <cite data-brackets-id="13862">— <span data-brackets-id="13863">Mr. John Deo</span>, CEO, Quata Foundation</cite>
-                                </blockquote>
-                            </div>
-
-                            <!-- 1st Reference from Client -->
-                            <div data-brackets-id="13846" class="col col-md-12 col-sm-12 col-xs-12 swiper-slide" data-swiper-slide-index="0" style="width: 970px;">
-                                <!-- Client Photo -->
-                                <div data-brackets-id="13847" class="client-photo center-block">
-                                    <img data-brackets-id="13848" class="center-block img-responsive" src="assets/images/clients/face-1.png" data-rjs="assets/images/clients/face-1@2x.png" alt="">
-                                </div>
-                                <!-- Client Testimonial -->
-                                <blockquote data-brackets-id="13849" class="text-center">
-                                    "Playing Tolstoy. Sorin was lucky enough to share intense adrenaline-high scenes with Hollywood's own Sam Shepard (Black Hawk Down), Richard Madden (Robb Stark in Game of Thrones) and Augustus Prew(About a boy). Klondike depicts the gold rush in 1890s."
-									<cite data-brackets-id="13850"> <span data-brackets-id="13851">Klondike</span></cite>                                </blockquote>
-                            </div>
-                            <!-- ./1st Reference from Client -->
-
-                            <!-- 1st Reference from Client -->
-                            <div data-brackets-id="13852" class="col col-md-12 col-sm-12 col-xs-12 swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 970px;">
-                                <!-- Client Photo -->
-                                <div data-brackets-id="13853" class="client-photo center-block">
-                                    <img data-brackets-id="13854" class="center-block img-responsive" src="assets/images/clients/face-2.png" data-rjs="assets/images/clients/face-2@2x.png" alt="">
-                                </div>
-                                <!-- Client Testimonial -->
-                                <blockquote data-brackets-id="13855" class="text-center">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                                    In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum
-                                    venenatis pharetra mi, ut vestibulum elit ultricies a. Vestibulum at mollis ex, ac consectetur
-                                    massa. Donec nunc, laoreet a nibh et, semper tincidunt nunc. Donec ac posuere tellus."
-                                    <cite data-brackets-id="13856">— <span data-brackets-id="13857">Mrs. Maria Polo</span>, CEO, Anchor</cite>
-                                </blockquote>
-                            </div>
-                            <!-- ./1st Reference from Client -->
-
-                            <!-- 1st Reference from Client -->
-                            <div data-brackets-id="13858" class="col col-md-12 col-sm-12 col-xs-12 swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 970px;">
-                                <!-- Client Photo -->
-                                <div data-brackets-id="13859" class="client-photo center-block">
-                                    <img data-brackets-id="13860" class="center-block img-responsive" src="assets/images/clients/face-3.png" data-rjs="assets/images/clients/face-3@2x.png" alt="">
-                                </div>
-                                <!-- Client Testimonial -->
-                                <blockquote data-brackets-id="13861" class="text-center">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                                    In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum
-                                    venenatis pharetra mi, ut vestibulum elit ultricies a. Vestibulum at mollis ex, ac consectetur
-                                    massa. Donec nunc, laoreet a nibh et, semper tincidunt nunc. Donec ac posuere tellus."
-                                    <cite data-brackets-id="13862">— <span data-brackets-id="13863">Mr. John Deo</span>, CEO, Quata Foundation</cite>
-                                </blockquote>
-                            </div>
-                            <!-- ./1st Reference from Client -->
-
-                        <div data-brackets-id="13846" class="col col-md-12 col-sm-12 col-xs-12 swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 970px;">
-                                <!-- Client Photo -->
-                                <div data-brackets-id="13847" class="client-photo center-block">
-                                    <img data-brackets-id="13848" class="center-block img-responsive" src="assets/images/clients/face-1.png" data-rjs="assets/images/clients/face-1@2x.png" alt="">
-                                </div>
-                                <!-- Client Testimonial -->
-                                <blockquote data-brackets-id="13849" class="text-center">
-                                    "Playing Tolstoy. Sorin was lucky enough to share intense adrenaline-high scenes with Hollywood's own Sam Shepard (Black Hawk Down), Richard Madden (Robb Stark in Game of Thrones) and Augustus Prew(About a boy). Klondike depicts the gold rush in 1890s."
-									<cite data-brackets-id="13850"> <span data-brackets-id="13851">Klondike</span></cite>                                </blockquote>
-                            </div></div>
-                        <!-- Pagination -->
-                        <div data-brackets-id="13864" class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ./Testimonial -->
-
-
-    <!-- Interesting Facts -->
-    
-    <!-- Interesting Facts -->
-
-
-    <!-- Screen Shots -->
-    
-
-
-
-    <!-- Download
-    ------------------------------------------------------------------------------------------------------------------->
-    <section id="download">
-        <div class="overlay">
+        <!-- Header -->
+        <header id="sp3" class="dark2" style="background-image:url(img/headers/subpage.jpg)"
+            data-overlay="9">
             <div class="container">
-                <!-- Section Title -->
-                <h2 class="section-title section-title-on-overlay"><span>Be</span> our <span>user</span></h2>
-                <p class="section-intro section-intro-on-overlay text-center">
-                    is great for both of your personal and your business purpose. We also offer enterprise solution
-                    for . It already has <span>35000+</span> downloads and <span>27000+</span> active users worldwide.
-                    You can get from <span>Play Store</span> and it is also available on <span>App Store.</span>
-                </p>
-                <!-- Download Buttons -->
-                <div class="row text-center">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <!-- For Android -->
-                        <a class="btn ease-in-animation" href="#0"><i class="fa fa-android"></i>Play Store</a>
-                        <!-- For iPhone -->
-                        <a class="btn ease-in-animation" href="#0"><i class="fa fa-apple"></i>App Store</a>
-                    </div>
-                </div>
-                <!-- ./Download Buttons -->
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Team Members
-    ------------------------------------------------------------------------------------------------------------------->
-    
-
-
-    <!-- Contact [Form + Info + Map + News Letter Form + Social Icon]
-    ------------------------------------------------------------------------------------------------------------------->
-    
-
-    <!-- Google Map -->
-   
-    <!-- ./Google Map -->
-
-
-    <!-- Get in Touch -->
-    <section id="get-in-touch">
-        <div class="overlay">
-            <div class="container">
-
-                <!-- Title -->
-                <h2 class="section-title section-title-on-overlay">Get in <span>touch</span></h2>
-
                 <div class="row">
-                    <!-- News Letter Form -->
-                    <div class="newsletter center-block">
-                        <form class="mailchimp">
-                            <input id="newsletter-email" type="email" name="newsletter-email" placeholder="Enter Your Email Here" required="required">
-                            <button class="btn center-block ease-in-animation" type="submit" id="subscribe-button"
-                                    name="newsletter-submit-data" value="submit">Submit</button>
-                            <div class="subscription-success"></div>
-                            <div class="subscription-error"></div>
+                    <div class="col-xs-6 page-title">
+                        <h1 class="h3">About us</h1></div>
+                    <div class="col-xs-6 right breadcrumbs hidden-xs">
+                        <a href="#">Home</a> <i class="ion-chevron-right"></i>
+                        <a href="#">Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Gallery -->
+        <section class="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-8 col-md-offset-2 title">
+                        <h2>OUR STORY</h2>
+                        <h4>We collectively build great products</h4>
+                    </div>
+                </div>
+                <div class="row m-space">
+                    <div class="col-md-12">
+                        <p>After reading Give and Take by Adam Grant, I was inspired to give back to my community. I spent a year volunteering at School on Wheels, a local organization that provides tutoring services to homeless children in Southern California. Though it was a great experience and I love the mission of the organization, I felt my skill sets in product development, design, and lean entrepreneurship could be utilized in another area to create a bigger impact, though I was unsure of exactly where that would take me.</p>
+                        
+                        <p>Around that time, I read an article about how Crossy Roads made $10 million from optional in-game ads in just the first 90 days. I realized that creating a charity-focused mobile game studio could be a new avenue for me to contribute to society while leveraging my skills and doing what I love. It seemed that if people were watching $10 million worth of ads just for in-game currency, they would be more so motivated to play games and watch ads if they knew they were giving to good causes at the same time! I began to dive deep into indie game development and study how to successfully produce and market mobile games. After researching and testing my hypothesis, I created Rawr! For A Reason, a mobile game studio that promises to give 50% of all optional ad revenue to causes that our community supports. Read our blog to join us on our journey!</p>
+                        
+                        
+                        
+                        <h5>Dave Applegate, Founder</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="single-pic">
+                            <img src="img/office/1-900x400.jpg" alt="">
+                            <img src="img/office/2-900x400.jpg" alt="">
+                            <img src="img/office/3-900x400.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="iconblock grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-8 col-md-offset-2 title">
+                        <h2>Our business model</h2>
+                        <h4>Most specifically, let us highlight the four following ones.</h4>
+                    </div>
+                </div>
+                <div class="row m-space">
+                    <div class="col-sm-6 col-md-3">
+                        <i class="ion-ionic"></i>
+                        <h3></h3>
+                        <p>Release free mobile arcade games that brighten up your day with a smile.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="ion-ionic"></i>
+                        <h3></h3>
+                        <p>Give 50% of every dollar we make to good causes that either reduce poverty, increase liberty or improve education.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="ion-ionic"></i>
+                        <h3></h3>
+                        <p>Do things that make our fans happy like removing forced ads and in-app purchases.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <i class="ion-ionic"></i>
+                        <h3></h3>
+                        <p>Grow through word of mouth and fan endorsement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Pictures -->
+        <div class="image-row no-pad">
+            <div class="container-fluid no-max no-pad">
+                <div class="row">
+
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="fw-image">
+                            <a href="img/office/1-750x450.jpg" data-lity>
+                                <img src="img/office/1-750x450.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="fw-image">
+                            <a href="img/office/2-750x450.jpg" data-lity>
+                            <img src="img/office/2-750x450.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="fw-image">
+                            <a href="img/office/3-750x450.jpg" data-lity>
+                            <img src="img/office/3-750x450.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="fw-image">
+                            <a href="img/office/4-750x450.jpg" data-lity>
+                            <img src="img/office/4-750x450.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- We've worked with -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 title">
+                        <h2>Our Values</h2>
+                        <h4>lorem ipsum</h4>
+                    </div>
+                </div>
+                <div class="row m-space">
+                    <div class="col-sm-6 service">
+                        <i class="ion-ios-barcode-outline"></i>
+                        <h5>Grow our fan’s love for Rawr! for a Reason through giving. Our success will follow.</h5>
+                        <p>Our fans extend beyond the players to other indie game developers and mobile game content creators. We give joy to those who play our games. We support the indie dev ecosystem by sharing our knowledge and promoting other developers. We help game content creators easily create entertaining and marketable content.</p>
+                    </div>
+                    <div class="col-sm-6 service">
+                        <i class="ion-ios-heart-outline"></i>
+                        <h5>Improve a little bit every day to make a big difference
+                        </h5>
+                        <p>Changing something as small as the mobile game you play can make the world a better place. It’s why we created Rawr! for a Reason. This philosophy extends to how we operate. We act small, adjust quick, rely on results and learn from everything.</p>
+                    </div>
+                    <div class="col-sm-6 service">
+                        <i class="ion-ios-settings"></i>
+                        <h5>Communicate openly & transparently.
+                        </h5>
+                        <p>We talk within the team honesty about the things that really matter. We communicate to our fans the same way by bringing relevant issues forward, posting transparent financials and sharing lessons that can benefit others.</p>
+                    </div>
+                    <div class="col-sm-6 service">
+                        <i class="ion-ios-lightbulb-outline"></i>
+                        <h5>Be the change we seek.
+                        </h5>
+                        <p>Change happens through action. We keep our heads down and focus on what matters… our fan’s love for Rawr! for a Reason and making the world a better place.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="style-toggle"></div></section>
+
+        <!-- Work with us -->
+        <div id="c_newsletter" class="area center dark2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="promo-heading">
+                  Get e-mails on new app releases
+               </span>
+                        <form action="post">
+                            <input type="text" placeholder="Your email here...">
+                            <input type="submit" value="Subscribe">
+                            <p class="note">*We will never use your information for spam</p>
                         </form>
                     </div>
-                    <!-- ./News Letter Form -->
                 </div>
-
-                <div class="social-icons">
-                    <!-- Social Icons -->
-                    <ul class="list-inline text-center">
-                        <li> <a href="" class="btn ease-animation"> <i class="ion-social-facebook"></i> </a> </li>
-                        <li> <a href="" class="btn ease-animation"> <i class="ion-social-googleplus"></i> </a> </li>
-                        <li> <a href="" class="btn ease-animation"> <i class="ion-social-twitter"></i> </a> </li>
-                        <li> <a href="" class="btn ease-animation"> <i class="ion-social-linkedin"></i> </a> </li>
-                        <li> <a href="" class="btn ease-animation"> <i class="ion-social-instagram"></i> </a> </li>
-                    </ul>
-                    <!-- ./Social Icons -->
-                </div>
-
             </div>
-        </div>
-    </section>
-    <!-- ./Get in Touch -->
+        <div class="style-toggle"></div></div>
+
+<footer id="smart" class="dark1">
+            <div class="container">
+                <div class="row foot-space">
+                    <div class="col-md-4 col-sm-12">
+                        <img src="/img/logo.png" width="100" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Odio, consequatur facere molestiae iusto atque.
+                        </p>
+                        <div class="social">
+                            <a href="#"><i class="ion-social-reddit"></i></a>
+                            <a href="#"><i class="ion-social-googleplus"></i></a>
+                            <a href="#"><i class="ion-social-instagram-outline"></i></a>
+                            <a href="#"><i class="ion-social-linkedin-outline"></i></a>
+                            <a href="#"><i class="ion-social-pinterest-outline"></i></a>
+                            <a href="#"><i class="ion-social-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12 spacer">
+                                <h5 class="foot-title">Helpful Links</h5>
+                                <ul>
+                                    <li><a href="#">Games</a></li>
+                                    <li><a href="#">Our Story</a></li>
+                                    <li><a href="#">Our Financials</a></li>
+                                    <li><a href="#">Causes We Support</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 spacer">
+                                <h5 class="foot-title">Company</h5>
+                                <ul>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 spacer">
+                                <h5 class="foot-title">Support</h5>
+                                <ul>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <hr>
+                    </div>
+                    <div class="col-xs-12 xs-center">
+                        <p class="footer-text">Copyright &copy; Rawr for a reason. All rights reservered <a href="#">Terms and Conditions</a>                            <a href="#">Cookie Policy</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- end of web-in -->
+    <!-- end of web-in -->
+    <script src="vendor/jquery-2.2.1.min.js"></script>
+    <script src="vendor/matchHeight-min.js"></script>
+    <script src="vendor/contact/validator.js"></script>
+    <script src="vendor/contact/contact.js"></script>
+    <script src="vendor/pace.min.js"></script>
+    <script src="vendor/headroom/headroom.min.js"></script>
+    <script src="vendor/owl-slider/owl.carousel.min.js"></script>
+    <script src="vendor/slideshow/anime.min.js"></script>
+    <script src="vendor/slideshow/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/slideshow/main.js"></script>
+    <script src="vendor/parallax/materialize.min.js"></script>
+    <script src="vendor/lightbox/lity.min.js"></script>
+    <script src="vendor/tabs/jquery.tabslet.min.js"></script>
+    <script src="vendor/masonry.pkgd.min.js"></script>
+    <script src="js/main.min.js"></script>
 
 
 
+<div class="hiddendiv common"></div><div id="cu"><link rel="stylesheet" href="master/customiser/cu.css">
+
+<ul>
+    <li class="a" data-theme="css/theme.css"></li>
+    <li class="b" data-theme="css/theme2.css"></li>
+    <li class="c" data-theme="css/theme3.css"></li>
+    <li class="d" data-theme="css/theme4.css"></li>
+    <li class="e" data-theme="css/theme5.css"></li>
+    <li class="f" data-theme="css/theme6.css"></li>
+    <li class="g" data-theme="css/theme7.css"></li>
+</ul>
 
 
-
-    <!-- Footer
-    ------------------------------------------------------------------------------------------------------------------->
-    <footer>
-        <div class="container">
-			<p class="text-center">Sorin 2017</p>
-            
-        </div>
-    </footer>
-
-
-    <!-- Back To Top -->
-    <a href="#home" id="back-to-top" class="text-center"><i class="ion-ios-arrow-up"></i></a>
-    <!-- ./Back To Top -->
-
-
-
-
-
-    <!-- Switcher (Only for Demo) -->
-    
-    <!-- ./Switcher (Only for Demo) -->
-
-
-
-    <!-- JavaScripts & jQuery -->
-    <script src="vendor/jquery/jquery-2.1.3.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/aos/aos.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO3E4rPKVUYhCVRaKgLFbtCca2AF-za04"></script>
-    <script src="assets/javascript/custom-map.js"></script>
-    <script src="vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="vendor/parallax/jquery.stellar.js"></script>
-    <script src="vendor/retina/retina.min.js"></script>
-    <script src="vendor/swiper/swiper.min.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/counter-up/waypoints.min.js"></script>
-    <script src="vendor/counter-up/jquery.counterup.min.js"></script>
-    <script src="vendor/ajaxchimp/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/javascript/custom-script.js"></script>
-    <script src="assets/javascript/switcher.js"></script>
-
-
+<script>
+$("li[data-theme]").on("click", function() {
+    $("link#theme").attr("href", $(this).data("theme"));
+});
+$('section, div.area, footer').append(
+    '<div class="style-toggle"></div>');
+$('.style-toggle').on('click', function() {
+    var $this = $(this),
+        $parent = $this.parent();
+    if ($parent.hasClass('grey')) {
+        $this.parent('footer').find('img').attr("src", "img/logo-light.svg");
+        $this.parent('#c_logo-area').find('img').attr("src", "img/logos/light/");
+        $parent.removeClass('grey').addClass('dark1');
+    } else if ($parent.hasClass('dark1')) {
+        $parent.removeClass('dark1').addClass('dark2');
+    } else if ($parent.hasClass('dark2')) {
+        $parent.removeClass('dark2').addClass('dark3');
+    } else if ($parent.hasClass('dark3')) {
+        $parent.removeClass('dark3');
+        $this.parent('footer').find('img').attr("src", "img/logo-dark.svg");
+    } else {
+        $parent.addClass('grey');
+    }
+});
+$('header.parallax-container').append(
+    '<div class="header-p-toggle"></div>');
+$('.header-p-toggle').on('click', function() {
+    var $this = $(this),
+        $parent = $this.parent(),
+        $nav = $('nav');
+    if ($parent.hasClass('dark')) {
+        $parent.removeClass('dark').addClass('light');
+        $nav.removeClass('start-light');
+    } else if ($parent.hasClass('light')) {
+        $parent.removeClass('light').addClass('primary');
+        $nav.addClass('start-light');
+        $nav.find('a.btn').addClass('white');
+    } else {
+        $parent.addClass('dark').removeClass('primary');
+        $nav.addClass('transparent').addClass('start-light');
+        $nav.find('a.btn').removeClass('white');
+    }
+});
+$('header').append(
+    '<div class="header-toggle"></div>');
+$('.header-toggle').on('click', function() {
+    var $this = $(this),
+        $parent = $this.parent(),
+        $nav = $('nav');
+    if ($parent.hasClass('grey')) {
+        $parent.removeClass('grey').addClass('dark1');
+        $nav.addClass('start-light');
+    } else if ($parent.hasClass('dark1')) {
+        $parent.removeClass('dark1').addClass('dark2');
+    } else if ($parent.hasClass('dark2')) {
+        $parent.removeClass('dark2').addClass('dark3');
+    } else if ($parent.hasClass('dark3')) {
+        $parent.removeClass('dark3');
+        $nav.removeClass('start-light');
+    } else {
+        $parent.addClass('grey');
+    }
+});
+</script>
+   
 </body>
+
 </html>
